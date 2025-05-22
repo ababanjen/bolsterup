@@ -1,3 +1,3 @@
 export const headerNavigation = ["projects", "products"];
 
-export const tags = ['new','up coming','for sale']
+export const filterTags = ['new','up coming','for sale']

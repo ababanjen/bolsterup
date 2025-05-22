@@ -1,5 +1,5 @@
 import MButton from "@mui/material/Button";
-import { ButtonTypes } from "../utils/types/formComponentsTypes";
+import { ButtonTypes } from "../utils/types/types";
 const Button = ({
   variant = "contained",
   disabled,

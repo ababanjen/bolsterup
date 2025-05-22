@@ -9,14 +9,14 @@ export default function Map() {
       center={[51.505, -0.09]}
       zoom={13}
       scrollWheelZoom={false}
-      className="w-full h-[500px] rounded-lg"
+      className="h-[500px] w-full rounded-lg"
     >
       <TileLayer
         attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a>'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <Marker position={[51.505, -0.09]}>
-        <Popup>Simple Open Map</Popup>
+        <Popup>This is London!</Popup>
       </Marker>
     </MapContainer>
   );

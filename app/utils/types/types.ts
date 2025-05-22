@@ -10,9 +10,10 @@ export type ButtonTypes = {
 
 export type SearchFieldTypes = {
   placeholder?: string | React.ReactNode;
+  className?: string;
 };
 
-export type ProductTypes = {
+export type ProjectsTypes = {
   id: string;
   status: string;
   projectName: string;
@@ -20,4 +21,15 @@ export type ProductTypes = {
   type: string;
   companyName: string;
   companyImg: string | null;
+};
+
+export type BrandType = {
+  id: string;
+  name: string;
+  count: number;
+};
+export type CategoryTypes = {
+  id: string;
+  category: string;
+  brands: BrandType[];
 };
