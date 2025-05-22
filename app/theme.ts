@@ -7,6 +7,41 @@ const theme = createTheme({
     MuiChip: {
       variants:[
         {
+          props: { variant: 'default-parent' },
+          style: {
+            backgroundColor: '#FFFFFF',
+            color: '#000000',
+          },
+        },
+        {
+          props: { variant: 'default' },
+          style: {
+            backgroundColor: '#383838',
+            color: '#FFFFFF',
+          },
+        },
+        {
+          props: { variant: 'active' },
+          style: {
+            backgroundColor: '#E3F8FF',
+            color: '#204C5B',
+          },
+        },
+        {
+          props: { variant: 'active-parent' },
+          style: {
+            backgroundColor: '#204C5B',
+            color: '#FFFFFF',
+          },
+        },
+        {
+          props: { variant: 'light' },
+          style: {
+            backgroundColor: '#F8FBFD',
+            color: '#333333',
+          },
+        },
+        {
           props: { variant: 'info' },
           style: {
             backgroundColor: '#E3F2FD',

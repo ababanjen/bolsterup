@@ -10,7 +10,6 @@ import {
 import { CategoryTypes } from "../../utils/types/types";
 
 const Categories = ({ categories }: { categories: CategoryTypes[] }) => {
-  console.log({categories});
   return (
     <Container className="flex flex-col !p-0">
       {categories.map(({ category, id, brands }) => (

@@ -3,8 +3,9 @@ import Breadcrumbs from "../components/breadcrumbs";
 import Header from "../components/header";
 import Search from "../components/search";
 import MapContainer from "./components/mapContainer";
-import FilterPills from "./components/filterPills";
+import FilterPills from "../components/filterPills";
 import ProjectsContainer from "./components/projectsContainer";
+import { projectsFilters } from "../utils/constants";
 const Projects = () => {
   return (
     <Container className="!flex !justify-center !flex-col" maxWidth="xl">
@@ -22,7 +23,7 @@ const Projects = () => {
           maxWidth="xl"
         >
           <Container className="!p-0 gap-2 !flex !flex-col" maxWidth="xl">
-            <FilterPills />
+            <FilterPills tags={projectsFilters} />
             <ProjectsContainer />
           </Container>
           <MapContainer />

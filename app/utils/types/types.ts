@@ -33,3 +33,11 @@ export type CategoryTypes = {
   category: string;
   brands: BrandType[];
 };
+
+export type filterPillTypes = { name: string; count: number }[] | string[];
+
+export type ChipTypes = {
+  isString: boolean;
+  isActive: boolean;
+  tag: string | object;
+};
